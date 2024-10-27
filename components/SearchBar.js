@@ -6,6 +6,7 @@ const SearchBar = ({ searchQuery, searchUsers, clearSearch, setSearchModalVisibl
     <TextInput
       style={styles.searchBar}
       placeholder="Search users..."
+      placeholderTextColor="#888"
       value={searchQuery}
       onChangeText={searchUsers}
       onFocus={() => setSearchModalVisible(true)}
