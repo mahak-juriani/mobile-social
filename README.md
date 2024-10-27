@@ -1,80 +1,82 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Social Media App
 
-# Getting Started
+Welcome to the Social Media App! This is a simple social media prototype built using React Native. The app allows users to view posts, search for users, and see user details with a nice user interface. It's a great starting point if you're learning React Native or want to explore how social apps work.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **User Posts Feed**: Browse through a list of posts made by various users. Each post displays the user's name, profile picture, and post content.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **User Search**: Use the search bar to find users. The app includes a fuzzy search feature that helps find users even if the search term is slightly inaccurate.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **User Details Modal**: Click on a user's name or profile picture to view more information about them, including their posts, email, and contact details.
 
-```bash
-# using npm
-npm start
+- **Simple UI Animations**: The app includes some basic UI animations, such as focusing on the search bar when selected, to make the user experience smoother.
 
-# OR using Yarn
-yarn start
-```
+## How to Run the Project
 
-## Step 2: Start your Application
+Follow these steps to run the Social Media App on your local machine:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Prerequisites
 
-### For Android
+- **Node.js** and **npm**: Make sure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
 
-```bash
-# using npm
-npm run android
 
-# OR using Yarn
-yarn android
-```
+### Getting Started
 
-### For iOS
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your-username/social-media-app.git
+   cd social-media-app
+   ```
 
-```bash
-# using npm
-npm run ios
+2. **Install Dependencies**
+   Install the necessary dependencies by running:
+   ```sh
+   npm install
+   ```
 
-# OR using Yarn
-yarn ios
-```
+3. **Start the Project**
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+   If you are running on Android using React Native CLI:
+   ```sh
+   npx react-native run-android
+   npx react-native start
+   ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Project Structure
 
-## Step 3: Modifying your App
+- **App.jsx**: The main entry point of the app. It manages the overall state and handles the different features like fetching data, searching, and showing user details.
 
-Now that you have successfully run the app, let's modify it.
+- **components/**: Contains all the reusable components used throughout the app:
+  - **SearchBar.js**: The search bar component that allows users to input their search queries.
+  - **PostList.js**: Displays the list of posts.
+  - **UserDetailsModal.js**: Shows detailed information about a selected user, including their recent posts.
+  - **SearchModal.js**: Displays search results when a user types in the search bar.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Technologies Used
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- **React Native**: The framework used to build the app.
+- **Expo**: Helps in setting up and running the app easily.
+- **Axios**: For fetching data from the JSONPlaceholder API.
+- **Fuse.js**: For implementing the fuzzy search functionality.
 
-## Congratulations! :tada:
+## APIs Used
 
-You've successfully run and modified your React Native App. :partying_face:
+This project uses **JSONPlaceholder** as a fake REST API to fetch posts and user data. It's a great tool for prototyping and testing without needing a real backend.
 
-### Now what?
+- **Posts API**: `https://jsonplaceholder.typicode.com/posts`
+- **Users API**: `https://jsonplaceholder.typicode.com/users`
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+## Future Improvements
 
-# Troubleshooting
+- **Like and Comment Functionality**: Currently, the "like" button is just a placeholder. Adding real functionality to like and comment on posts would enhance the app.
+- **User Authentication**: Implementing user login and authentication to personalize the experience.
+- **Improved Animations**: More fluid animations for opening modals and transitioning between screens.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Contributing
 
-# Learn More
+Feel free to fork this repository and submit pull requests. Contributions are always welcome, whether it's improving the UI, fixing bugs, or adding new features.
 
-To learn more about React Native, take a look at the following resources:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# mobile-social
+Thanks for checking out this project! I hope you enjoy exploring and learning from it as much as I did building it. If you have any questions or suggestions, feel free to reach out!
+
