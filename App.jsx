@@ -3,7 +3,6 @@ import { View, Text, FlatList, TouchableOpacity, TextInput, StyleSheet, Modal, B
 import axios from 'axios';
 import Fuse from 'fuse.js';
 import SearchBar from './components/SearchBar.js';
-// import UserList from './components/UserList';
 import PostList from './components/PostList.js';
 import UserDetailsModal from './components/UserDetailsModal.js';
 import SearchModal from './components/SearchModal.js';
